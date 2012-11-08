@@ -1,12 +1,10 @@
 <package>
   <name>joystick_drivers</name>
-  <version>1.9.0</version>
-  <license>GPL</license>
+  <version>1.9.4</version>
   <license>BSD</license>
-  <license>ZLib</license>
 
   <description>
-    This metapackage contains packages for interfacing common
+    This metapackage depends on packages for interfacing common
     joysticks and human input devices with ROS.
   </description>
 
@@ -15,6 +13,11 @@
   <url type="bugtracker">https://github.com/ros-drivers/joystick_drivers/issues</url>
 
   <maintainer email="jbo@jhu.edu">Jonathan Bohren</maintainer>
+
+  <run_depend>joy</run_depend>
+  <run_depend>ps3joy</run_depend>  
+  <run_depend>spacenav_node</run_depend>  
+  <run_depend>wiimote</run_depend>  
 
   <export>
     <metapackage/>
