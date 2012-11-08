@@ -4,13 +4,21 @@ project(spacenav_node)
 
 # Load catkin and all dependencies required for this package
 set(CATKIN_DEPS roscpp geometry_msgs sensor_msgs)
-set(ROSDEP_DEPS libspacenav-dev spacenavd)
+set(ROSDEP_DEPS libspnav-dev spacenavd)
 find_package(catkin REQUIRED ${CATKIN_DEPS})
-catkin_package(
-  DEPENDS ${CATKIN_DEPS} ${ROSDEP_DEPS}
-  #INCLUDE_DIRS include
-  LIBRARIES ${PROJECT_NAME})
+catkin_package(DEPENDS ${CATKIN_DEPS} ${ROSDEP_DEPS})
 
 include_directories(${catkin_INCLUDE_DIRS})
 add_executable(spacenav_node src/spacenav_node.cpp)
 target_link_libraries (spacenav_node spnav X11 ${catkin_LIBRARIES})
+
+# Install targets
+install(TARGETS spacenav_node
+   ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
+   LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
+   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+   )
+
+install(DIRECTORY launch 
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
+  )
