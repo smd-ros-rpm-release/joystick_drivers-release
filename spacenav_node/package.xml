@@ -1,6 +1,6 @@
 <package>
   <name>spacenav_node</name>
-  <version>1.9.6</version>
+  <version>1.9.7</version>
   <license>BSD</license>
   <description>
     ROS interface to the 3Dconnexion SpaceNavigator 6DOF joystick.
@@ -28,10 +28,6 @@
   <run_depend>libspnav-dev</run_depend> 
   <run_depend>libx11-dev</run_depend> 
   <run_depend>spacenavd</run_depend> 
-
-  <test_depend>roscpp</test_depend> 
-  <test_depend>geometry_msgs</test_depend> 
-  <test_depend>sensor_msgs</test_depend> 
 
   <export>
     <architecture_independent/>

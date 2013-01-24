@@ -1,6 +1,6 @@
 <package>
   <name>ps3joy</name>
-  <version>1.9.6</version>
+  <version>1.9.7</version>
   <license>BSD</license>
 
   <description>
@@ -41,11 +41,6 @@
   <run_depend>joystick</run_depend>
   <run_depend>bluez</run_depend>
   <run_depend>python-bluez</run_depend>
-
-  <test_depend>diagnostic_msgs</test_depend>
-  <test_depend>sensor_msgs</test_depend>
-  <test_depend>rospy</test_depend>
-  <test_depend>rosgraph</test_depend>
 
   <export>
     <architecture_independent/>
