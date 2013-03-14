@@ -1,0 +1,12 @@
+Source: ros-groovy-joy
+Section: misc
+Priority: extra
+Maintainer: Jonathan Bohren <jbo@jhu.edu>
+Build-Depends: debhelper (>= 7.0.50~), joystick, ros-groovy-catkin, ros-groovy-diagnostic-updater, ros-groovy-roscpp, ros-groovy-sensor-msgs
+Homepage: http://www.ros.org/wiki/joy
+Standards-Version: 3.9.2
+
+Package: ros-groovy-joy
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, joystick, ros-groovy-diagnostic-updater, ros-groovy-roscpp, ros-groovy-sensor-msgs
+Description: ROS driver for a generic Linux joystick. The joy package contains joy_node, a node that interfaces a generic Linux joystick to ROS. This node publishes a &quot;Joy&quot; message, which contains the current state of each one of the joystick's buttons and axes.
