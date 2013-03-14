@@ -1,3 +1,3 @@
 [git-buildpackage]
-upstream-branch=release/ps3joy/1.9.8
+upstream-branch=@(release_tag)
 upstream-tree=branch
