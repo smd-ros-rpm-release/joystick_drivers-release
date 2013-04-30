@@ -1,6 +1,6 @@
 <package>
   <name>joystick_drivers</name>
-  <version>1.9.8</version>
+  <version>1.9.10</version>
   <license>BSD</license>
 
   <description>
@@ -13,6 +13,8 @@
   <url type="bugtracker">https://github.com/ros-drivers/joystick_drivers/issues</url>
 
   <maintainer email="jbo@jhu.edu">Jonathan Bohren</maintainer>
+
+  <buildtool_depend>catkin</buildtool_depend>
 
   <run_depend>joy</run_depend>
   <run_depend>ps3joy</run_depend>  
