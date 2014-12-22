@@ -8,8 +8,6 @@ License:        BSD
 URL:            http://www.ros.org/wiki/joy
 Source0:        %{name}-%{version}.tar.gz
 
-BuildArch:      noarch
-
 Requires:       linuxconsoletools
 Requires:       ros-indigo-diagnostic-updater
 Requires:       ros-indigo-roscpp
