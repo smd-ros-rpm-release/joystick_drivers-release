@@ -8,8 +8,6 @@ License:        BSD
 URL:            http://www.ros.org/wiki/ps3joy
 Source0:        %{name}-%{version}.tar.gz
 
-BuildArch:      noarch
-
 Requires:       bluez-libs
 Requires:       libusb-devel
 Requires:       linuxconsoletools
