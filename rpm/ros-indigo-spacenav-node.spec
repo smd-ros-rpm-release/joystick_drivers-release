@@ -8,8 +8,6 @@ License:        BSD
 URL:            http://www.ros.org/wiki/spacenav_node
 Source0:        %{name}-%{version}.tar.gz
 
-BuildArch:      noarch
-
 Requires:       libX11-devel
 Requires:       libspnav-devel
 Requires:       ros-indigo-geometry-msgs
